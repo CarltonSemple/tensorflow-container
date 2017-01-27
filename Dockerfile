@@ -1,10 +1,12 @@
 FROM ubuntu:16.04
 
 RUN apt-get update && apt-get upgrade -y \
-        python3-pip
+        python3-pip \
+        python3-tk
 
 RUN pip3 install --upgrade pip
 RUN pip3 install \
+        matplotlib \
         numpy \
         scipy \
         sklearn
