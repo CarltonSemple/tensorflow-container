@@ -4,6 +4,7 @@ RUN apt-get update && apt-get upgrade -y \
         python3-pip \
         python3-tk
 
+RUN apt-get install -y net-tools  
 RUN pip3 install --upgrade pip
 RUN pip3 install \
         matplotlib \
